@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frontEnd design </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/d293919c65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        
+        <nav>
+            <div class="logo">Easy<span class="logo-span">2</span>Go.com</div>
+
+            <div class="nav-bar">
+                <a href="#" class="toggle">
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                 </a>
+                <ul>
+                    
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#trackParcel">Track your parcel </a></li>
+                    <li><a href="#getQuote">Get a quote</a></li>
+                    <li><a href="#contactUs">Contact us</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="main" id="homeContent">
+              
+            <div class="main-passage">
+             <p> The Best Parcel Delivery in Algeria </p> 
+                 <ul class="list">
+                     <li><i class="fa-solid fa-square-check"></i>Fast Delivery</li>
+                     <li><i class="fa-solid fa-square-check"></i>Real Time Tracking</li>
+                     <li > <i class="fa-solid fa-square-check"></i>Affordable Prices</li>
+                 </ul>
+                 <img class="road" src="no.jpg" alt="" width="300px"height="300px">
+                 <div class="btn">
+                     <a href="#getQuote" > Get a quote</a>
+                 </div>
+
+            </div>
+
+            <div class="main-img">  
+                <img src="d2.png" alt="a man" width="650px" height="680px" >
+            </div> 
+        </div>
+        
+        
+       <section class="s" id="services">
+         <div class="service-t">
+                <h1 >Service</h1>
+         </div>
+
+         <div class="services">   
+
+            <div class="ser1">
+                <i class="fa-solid fa-people-carry-box"></i>
+                <h2>Classic  delivery </h2>
+                <p>One to One delivery  </p>
+                <div class="btn one"><a href="http://localhost/readmore/">Read more</a></div>
+           </div>
+
+            <div class="ser2">
+                <i class="fa-solid fa-boxes-stacked "></i>
+                <h2>E-commerce delivery</h2>
+                <p>We take  charge of delivering products </p>
+                <div class="btn two"><a href="#"> Read more</a></div>  
+            </div>
+
+            <div class="ser3">
+                <i class="fa-solid fa-earth-africa"></i>
+                <h2>Real time tarcking</h2>
+                <p>just insert your tracking number and find out the location of your parcel</p>
+                <div class="btn three"><a href="#"> Read more</a>   </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="block" id="trackParcel">
+     
+        <div class="block-img">
+           
+            <img src="process.png" alt="" width="700px" >
+        </div>
+        <div class="t-inbtn">
+            <h2>Track your parcel <i class="fa-solid fa-location-dot"></i></h2>
+            <p>Insert your tracking number to locate your parcel at any given time</p> 
+
+            <form  method="post" action="index.php" class="inbtn">     
+                <input type="text" placeholder="xx-xx-xx" id="t-btn1" name="tracking" >
+                <input type="submit" id="t-btn2" name="send_track" value="submit">
+            </form>   
+
+        </div> 
+    </div>
+      
+
+
+    <div class="main2" id="getQuote">
+            <div class="forum">
+                <div class="f-title">
+                    <h2>Get a quote </h2>
+                </div>
+
+                <form action="index.php" method="post" class="main-form">
+                <div class="forum-div">
+                    <label >Full name</label><br>
+                    <input type="text" name="fullName" ><br>
+                </div>
+                <div class="forum-div">
+                    <label >Phone number</label><br>
+                    <input type="text" name="phoneNumber"><br>
+                </div>
+                
+                <div class="forum-div">
+                    <label for="Delivering">Sending from</label><br>
+                    <input  type="text" placeholder="Algerie" name="source" >
+                    <select name="contries">
+                        <option value="Algeries">Algeries</option>
+                        <option value="Setif">Setif</option>
+                        <option value="Betna">Betna</option>
+                        <option value="Oran">Oran</option>
+                    </select>
+                </div>
+                <div class="forum-div">
+                    <label for="Delivering">Delivering to</label><br>
+                    <input  type="text"placeholder="Oran" name="destination" require>
+                    <select name="contries">
+                        <option value="Algeries">Algeries</option>
+                        <option value="Setif">Setif</option>
+                        <option value="Betna">Betna</option>
+                        <option value="Oran">Oran</option>
+                    </select>
+                </div>
+            
+                   <div class="forum-div">
+                      <label>Length</label> 
+                       <input type="text" placeholder="cm" name="length">
+                    </div>
+                    <div class="forum-div">
+                        <label>Height</labeel>
+                        <input type="text" placeholder="cm" name="height">
+                    </div>
+                    
+                    <div class="forum-div">
+                        <label>Weight</label>
+                        <input type="text" placeholder="kg" name="weight">
+                    </div>
+                    <div class="forum-div">
+                       <label>Email</label> 
+                        <input type="email" name="email">
+                    </div>
+                       
+                       <input type="submit" value="send" name="send_quote" class="btn2" >
+                       
+                       </form>
+                    
+                   
+                </div>
+                
+            </div>
+            
+        </div>
+       
+
+        <div class="c" id="contactUs">
+            <div class="conact">
+             <h2 class="conact-title">Contact us</h2>   
+            <div class="contact-info">
+                <p>Lotissement les vergers Bir Mourad Rais.
+                    16000 Alger</p> 
+                <p>(+213) 0560 477 356 63</p>
+                <p>contact@Easy2Go.com</p>
+            </div>
+            <form action="index.php" method="post" class="conact-form">
+                <p>If you have any questions fill free to send us an email</p>
+                <label>Email</label><br> 
+                <input type="email" placeholder="Email" name="mail"><br> 
+                <label>Your message</label> <br>
+                <textarea name="message" rows="6" placeholder="Enter your message" ></textarea>
+                <input   class="lastBtn" type="submit" name="send_contact" value="send">
+           </form>
+        </div>
+       
+    </div>
+    <footer>
+        <div class="close">Easy2Go &copy:2022</div> 
+    </footer>
+</body>
+</html>
